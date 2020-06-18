@@ -203,5 +203,5 @@ if (currentHour > 16){
 }
 else {
     console.log("Outside of working hours.")
-};
+}; //Issues with this line
 
