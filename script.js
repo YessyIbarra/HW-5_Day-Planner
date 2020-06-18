@@ -110,7 +110,7 @@ $(".saveBtn").click(function() {
 let currentHour = moment().hours();
 console.log(currentHour);
 
-if (currentHour === 23){
+if (currentHour === 8){
     $("#8am").css("background-color", "red")
 }
 
