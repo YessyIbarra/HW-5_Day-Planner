@@ -110,9 +110,65 @@ $(".saveBtn").click(function() {
 let currentHour = moment().hours();
 console.log(currentHour);
 
+//Need to come back and make this more efficient
+    //8am
 if (currentHour === 8){
-    $("#8am").css("background-color", "red")
+    $("#8am").css("background-color", "#7CF7CE")
 }
+if (currentHour < 8){
+    $("#8am").css("background-color", "#CFD8D6")
+}
+if (currentHour > 8){
+    $("#8am").css("background-color", "#F5C3E0")
+} //9am
+if (currentHour === 9){
+    $("#9am").css("background-color", "#7CF7CE")
+}
+if (currentHour < 9){
+    $("#9am").css("background-color", "#CFD8D6")
+}
+if (currentHour > 9){
+    $("#9am").css("background-color", "#F5C3E0")
+} //10am
+if (currentHour === 10){
+    $("#10am").css("background-color", "#7CF7CE")
+}
+if (currentHour < 10){
+    $("#10am").css("background-color", "#CFD8D6")
+}
+if (currentHour > 10){
+    $("#10am").css("background-color", "#F5C3E0")
+} //11am
+if (currentHour === 11){
+    $("#11am").css("background-color", "#7CF7CE")
+}
+if (currentHour < 11){
+    $("#11am").css("background-color", "#CFD8D6")
+}
+if (currentHour > 11){
+    $("#11am").css("background-color", "#F5C3E0")
+} //12pm
+if (currentHour === 12){
+    $("#12pm").css("background-color", "#7CF7CE")
+}
+if (currentHour < 12){
+    $("#12pm").css("background-color", "#CFD8D6")
+}
+if (currentHour > 12){
+    $("#12pm").css("background-color", "#F5C3E0")
+} //1pm
+if (currentHour === 13){
+    $("#1pm").css("background-color", "#7CF7CE")
+}
+if (currentHour < 13){
+    $("#1pm").css("background-color", "#CFD8D6")
+}
+if (currentHour > 13){
+    $("#1pm").css("background-color", "#F5C3E0")
+
+
+
+
 
 
 
