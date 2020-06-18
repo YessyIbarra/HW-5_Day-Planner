@@ -110,7 +110,7 @@ $(".saveBtn").click(function() {
 let currentHour = moment().hours();
 console.log(currentHour);
 
-//Need to come back and make this more efficient
+//Need to come back and make this more efficient & work correctly
     //8am
 if (currentHour === 8){
     $("#8am").css("background-color", "#7CF7CE")
@@ -165,13 +165,44 @@ if (currentHour < 13){
 }
 if (currentHour > 13){
     $("#1pm").css("background-color", "#F5C3E0")
-
-
-
-
-
-
-
-
-//THEN each timeblock is color coded to indicate whether it is in the past, present, or future
+} //2pm
+if (currentHour === 14){
+    $("#2pm").css("background-color", "#7CF7CE")
+}
+if (currentHour < 14){
+    $("#2pm").css("background-color", "#CFD8D6")
+}
+if (currentHour > 14){
+    $("#2pm").css("background-color", "#F5C3E0")
+} //3pm
+if (currentHour === 14){
+    $("#3pm").css("background-color", "#7CF7CE")
+}
+if (currentHour < 14){
+    $("#3pm").css("background-color", "#CFD8D6")
+}
+if (currentHour > 14){
+    $("#3pm").css("background-color", "#F5C3E0")
+} //4pm
+if (currentHour === 15){
+    $("#4pm").css("background-color", "#7CF7CE")
+}
+if (currentHour < 15){
+    $("#4pm").css("background-color", "#CFD8D6")
+}
+if (currentHour > 15){
+    $("#4pm").css("background-color", "#F5C3E0")
+} //5pm
+if (currentHour === 16){
+    $("#5pm").css("background-color", "#7CF7CE")
+}
+if (currentHour < 16){
+    $("#5pm").css("background-color", "#CFD8D6")
+}
+if (currentHour > 16){
+    $("#5pm").css("background-color", "#F5C3E0")
+}
+else {
+    console.log("Outside of working hours.")
+};
 
