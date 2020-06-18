@@ -43,13 +43,13 @@ $("#5pm").text(t9);
 
 //Adding on-click event for each save button with a class of saveBtn
 //I need to find a better way to save all text inputs to local storage for each hour
-$(".saveBtn").click(function() {
+$(".saveBtn").click(function () {
     console.log("I work!");
     let eightAMinputValue = document.getElementById("8am");
     let eight = eightAMinputValue.value;
     console.log(eight);
     localStorage.setItem("8am", eight);
-    
+
     //9am
     let nineAMinputValue = document.getElementById("9am");
     let nine = nineAMinputValue.value;
@@ -61,7 +61,7 @@ $(".saveBtn").click(function() {
     let ten = tenAMinputValue.value;
     console.log(ten);
     localStorage.setItem("10am", ten);
-    
+
     //11am
     let elevenAMinputValue = document.getElementById("11am");
     let eleven = elevenAMinputValue.value;
@@ -74,131 +74,131 @@ $(".saveBtn").click(function() {
     console.log(twelve);
     localStorage.setItem("12pm", twelve);
 
-     //1pm
-     let onePMinputValue = document.getElementById("1pm");
-     let one = onePMinputValue.value;
-     console.log(one);
-     localStorage.setItem("1pm", one);
+    //1pm
+    let onePMinputValue = document.getElementById("1pm");
+    let one = onePMinputValue.value;
+    console.log(one);
+    localStorage.setItem("1pm", one);
 
-     //2pm
-     let twoPMinputValue = document.getElementById("2pm");
-     let two = twoPMinputValue.value;
-     console.log(two);
-     localStorage.setItem("2pm", two);
+    //2pm
+    let twoPMinputValue = document.getElementById("2pm");
+    let two = twoPMinputValue.value;
+    console.log(two);
+    localStorage.setItem("2pm", two);
 
-     //3pm
-     let threePMinputValue = document.getElementById("3pm");
-     let three = threePMinputValue.value;
-     console.log(three);
-     localStorage.setItem("3pm", three);
+    //3pm
+    let threePMinputValue = document.getElementById("3pm");
+    let three = threePMinputValue.value;
+    console.log(three);
+    localStorage.setItem("3pm", three);
 
-     //4pm
-     let fourPMinputValue = document.getElementById("4pm");
-     let four = fourPMinputValue.value;
-     console.log(four);
-     localStorage.setItem("4pm", four);
+    //4pm
+    let fourPMinputValue = document.getElementById("4pm");
+    let four = fourPMinputValue.value;
+    console.log(four);
+    localStorage.setItem("4pm", four);
 
-     //5pm
-     let fivePMinputValue = document.getElementById("5pm");
-     let five = fivePMinputValue.value;
-     console.log(five);
-     localStorage.setItem("5pm", five);
-    
+    //5pm
+    let fivePMinputValue = document.getElementById("5pm");
+    let five = fivePMinputValue.value;
+    console.log(five);
+    localStorage.setItem("5pm", five);
+
 });
 
 let currentHour = moment().hours();
 console.log(currentHour);
 
 //Need to come back and make this more efficient & work correctly
-    //8am
-if (currentHour === 8){
+//8am
+if (currentHour === 8) {
     $("#8am").css("background-color", "#7CF7CE")
 }
-if (currentHour < 8){
+if (currentHour < 8) {
     $("#8am").css("background-color", "#CFD8D6")
 }
-if (currentHour > 8){
+if (currentHour > 8) {
     $("#8am").css("background-color", "#F5C3E0")
 } //9am
-if (currentHour === 9){
+if (currentHour === 9) {
     $("#9am").css("background-color", "#7CF7CE")
 }
-if (currentHour < 9){
+if (currentHour < 9) {
     $("#9am").css("background-color", "#CFD8D6")
 }
-if (currentHour > 9){
+if (currentHour > 9) {
     $("#9am").css("background-color", "#F5C3E0")
 } //10am
-if (currentHour === 10){
+if (currentHour === 10) {
     $("#10am").css("background-color", "#7CF7CE")
 }
-if (currentHour < 10){
+if (currentHour < 10) {
     $("#10am").css("background-color", "#CFD8D6")
 }
-if (currentHour > 10){
+if (currentHour > 10) {
     $("#10am").css("background-color", "#F5C3E0")
 } //11am
-if (currentHour === 11){
+if (currentHour === 11) {
     $("#11am").css("background-color", "#7CF7CE")
 }
-if (currentHour < 11){
+if (currentHour < 11) {
     $("#11am").css("background-color", "#CFD8D6")
 }
-if (currentHour > 11){
+if (currentHour > 11) {
     $("#11am").css("background-color", "#F5C3E0")
 } //12pm
-if (currentHour === 12){
+if (currentHour === 12) {
     $("#12pm").css("background-color", "#7CF7CE")
 }
-if (currentHour < 12){
+if (currentHour < 12) {
     $("#12pm").css("background-color", "#CFD8D6")
 }
-if (currentHour > 12){
+if (currentHour > 12) {
     $("#12pm").css("background-color", "#F5C3E0")
 } //1pm
-if (currentHour === 13){
+if (currentHour === 13) {
     $("#1pm").css("background-color", "#7CF7CE")
 }
-if (currentHour < 13){
+if (currentHour < 13) {
     $("#1pm").css("background-color", "#CFD8D6")
 }
-if (currentHour > 13){
+if (currentHour > 13) {
     $("#1pm").css("background-color", "#F5C3E0")
 } //2pm
-if (currentHour === 14){
+if (currentHour === 14) {
     $("#2pm").css("background-color", "#7CF7CE")
 }
-if (currentHour < 14){
+if (currentHour < 14) {
     $("#2pm").css("background-color", "#CFD8D6")
 }
-if (currentHour > 14){
+if (currentHour > 14) {
     $("#2pm").css("background-color", "#F5C3E0")
 } //3pm
-if (currentHour === 14){
+if (currentHour === 14) {
     $("#3pm").css("background-color", "#7CF7CE")
 }
-if (currentHour < 14){
+if (currentHour < 14) {
     $("#3pm").css("background-color", "#CFD8D6")
 }
-if (currentHour > 14){
+if (currentHour > 14) {
     $("#3pm").css("background-color", "#F5C3E0")
 } //4pm
-if (currentHour === 15){
+if (currentHour === 15) {
     $("#4pm").css("background-color", "#7CF7CE")
 }
-if (currentHour < 15){
+if (currentHour < 15) {
     $("#4pm").css("background-color", "#CFD8D6")
 }
-if (currentHour > 15){
+if (currentHour > 15) {
     $("#4pm").css("background-color", "#F5C3E0")
 } //5pm
-if (currentHour === 16){
+if (currentHour === 16) {
     $("#5pm").css("background-color", "#7CF7CE")
 }
-if (currentHour < 16){
+if (currentHour < 16) {
     $("#5pm").css("background-color", "#CFD8D6")
 }
-if (currentHour > 16){
+if (currentHour > 16) {
     $("#5pm").css("background-color", "#F5C3E0")
 }
 else {
