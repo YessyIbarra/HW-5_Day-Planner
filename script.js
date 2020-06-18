@@ -36,6 +36,42 @@ $(".saveBtn").click(function() {
     let eleven = elevenAMinputValue.value;
     console.log(eleven);
     localStorage.setItem("11am", eleven);
+
+    //12pm
+    let twelvePMinputValue = document.getElementById("12pm");
+    let twelve = twelvePMinputValue.value;
+    console.log(twelve);
+    localStorage.setItem("12pm", twelve);
+
+     //1pm
+     let onePMinputValue = document.getElementById("1pm");
+     let one = onePMinputValue.value;
+     console.log(one);
+     localStorage.setItem("1pm", one);
+
+     //2pm
+     let twoPMinputValue = document.getElementById("2pm");
+     let two = twoPMinputValue.value;
+     console.log(two);
+     localStorage.setItem("2pm", two);
+
+     //3pm
+     let threePMinputValue = document.getElementById("3pm");
+     let three = threePMinputValue.value;
+     console.log(three);
+     localStorage.setItem("3pm", three);
+
+     //4pm
+     let fourPMinputValue = document.getElementById("4pm");
+     let four = fourPMinputValue.value;
+     console.log(four);
+     localStorage.setItem("4pm", four);
+
+     //5pm
+     let fivePMinputValue = document.getElementById("5pm");
+     let five = fivePMinputValue.value;
+     console.log(five);
+     localStorage.setItem("5pm", five);
     
 });
 
