@@ -9,6 +9,38 @@ let m2 = m.format("dddd , MMMM Do YYYY");
 //Using JQUERY to append the current day to the HTML <p-tag>
 $("#currentDay").text(m2);
 
+//If any text is in local storage the below code will grab it
+//and append the text to the text area
+let t0 = localStorage.getItem("8am");
+$("#8am").text(t0);
+
+let t1 = localStorage.getItem("9am");
+$("#9am").text(t1);
+
+let t2 = localStorage.getItem("10am");
+$("#10am").text(t2);
+
+let t3 = localStorage.getItem("11am");
+$("#11am").text(t3);
+
+let t4 = localStorage.getItem("12pm");
+$("#12pm").text(t4);
+
+let t5 = localStorage.getItem("1pm");
+$("#1pm").text(t5);
+
+let t6 = localStorage.getItem("2pm");
+$("#2pm").text(t6);
+
+let t7 = localStorage.getItem("3pm");
+$("#3pm").text(t7);
+
+let t8 = localStorage.getItem("4pm");
+$("#4pm").text(t8);
+
+let t9 = localStorage.getItem("5pm");
+$("#5pm").text(t9);
+
 
 //Adding on-click event for each save button with a class of saveBtn
 //I need to find a better way to save all text inputs to local storage for each hour
@@ -76,13 +108,9 @@ $(".saveBtn").click(function() {
 });
 
 
-//WHEN I click the save button for that timeblock
-//THEN the text for that event is saved in local storage
 
 
 
-//WHEN I view the timeblocks for that day
+
 //THEN each timeblock is color coded to indicate whether it is in the past, present, or future
 
-//WHEN I refresh the page
-//THEN the saved events persist
