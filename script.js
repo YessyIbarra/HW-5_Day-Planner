@@ -174,31 +174,31 @@ if (currentHour < 14) {
 if (currentHour > 14) {
     $("#2pm").css("background-color", "#F5C3E0")
 } //3pm
-if (currentHour === 14) {
+if (currentHour === 15) {
     $("#3pm").css("background-color", "#7CF7CE")
 }
-if (currentHour < 14) {
+if (currentHour < 15) {
     $("#3pm").css("background-color", "#CFD8D6")
 }
-if (currentHour > 14) {
+if (currentHour > 15) {
     $("#3pm").css("background-color", "#F5C3E0")
 } //4pm
-if (currentHour === 15) {
+if (currentHour === 16) {
     $("#4pm").css("background-color", "#7CF7CE")
 }
-if (currentHour < 15) {
+if (currentHour < 16) {
     $("#4pm").css("background-color", "#CFD8D6")
 }
-if (currentHour > 15) {
+if (currentHour > 16) {
     $("#4pm").css("background-color", "#F5C3E0")
 } //5pm
-if (currentHour === 16) {
+if (currentHour === 17) {
     $("#5pm").css("background-color", "#7CF7CE")
 }
-if (currentHour < 16) {
+if (currentHour < 17) {
     $("#5pm").css("background-color", "#CFD8D6")
 }
-if (currentHour > 16) {
+if (currentHour > 17) {
     $("#5pm").css("background-color", "#F5C3E0")
 }
 else {
